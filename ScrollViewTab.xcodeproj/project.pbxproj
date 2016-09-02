@@ -13,6 +13,11 @@
 		B3FE60501D792BC100300823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FE604E1D792BC100300823 /* Main.storyboard */; };
 		B3FE60521D792BC100300823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE60511D792BC100300823 /* Assets.xcassets */; };
 		B3FE60551D792BC100300823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FE60531D792BC100300823 /* LaunchScreen.storyboard */; };
+		B3FE60631D792CAC00300823 /* TCSlideButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE60621D792CAC00300823 /* TCSlideButton.m */; };
+		B3FE60661D794EC400300823 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE60651D794EC400300823 /* UIView+Extension.m */; };
+		B3FE60691D7954D600300823 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE60681D7954D600300823 /* FirstViewController.m */; };
+		B3FE606C1D7954E500300823 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE606B1D7954E500300823 /* SecondViewController.m */; };
+		B3FE606F1D79632F00300823 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE606E1D79632F00300823 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		B3FE60511D792BC100300823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3FE60541D792BC100300823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3FE60561D792BC100300823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FE60611D792CAC00300823 /* TCSlideButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSlideButton.h; sourceTree = "<group>"; };
+		B3FE60621D792CAC00300823 /* TCSlideButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSlideButton.m; sourceTree = "<group>"; };
+		B3FE60641D794EC400300823 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		B3FE60651D794EC400300823 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		B3FE60671D7954D600300823 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B3FE60681D7954D600300823 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B3FE606A1D7954E500300823 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B3FE606B1D7954E500300823 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B3FE606D1D79632F00300823 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = SlideButton/ThirdViewController.h; sourceTree = "<group>"; };
+		B3FE606E1D79632F00300823 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = SlideButton/ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 		B3FE60441D792BC100300823 /* ScrollViewTab */ = {
 			isa = PBXGroup;
 			children = (
+				B3FE60601D792CAC00300823 /* SlideButton */,
 				B3FE60481D792BC100300823 /* AppDelegate.h */,
 				B3FE60491D792BC100300823 /* AppDelegate.m */,
 				B3FE604B1D792BC100300823 /* ViewController.h */,
@@ -67,6 +83,12 @@
 				B3FE60531D792BC100300823 /* LaunchScreen.storyboard */,
 				B3FE60561D792BC100300823 /* Info.plist */,
 				B3FE60451D792BC100300823 /* Supporting Files */,
+				B3FE60671D7954D600300823 /* FirstViewController.h */,
+				B3FE60681D7954D600300823 /* FirstViewController.m */,
+				B3FE606A1D7954E500300823 /* SecondViewController.h */,
+				B3FE606B1D7954E500300823 /* SecondViewController.m */,
+				B3FE606D1D79632F00300823 /* ThirdViewController.h */,
+				B3FE606E1D79632F00300823 /* ThirdViewController.m */,
 			);
 			path = ScrollViewTab;
 			sourceTree = "<group>";
@@ -77,6 +99,17 @@
 				B3FE60461D792BC100300823 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3FE60601D792CAC00300823 /* SlideButton */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE60641D794EC400300823 /* UIView+Extension.h */,
+				B3FE60651D794EC400300823 /* UIView+Extension.m */,
+				B3FE60611D792CAC00300823 /* TCSlideButton.h */,
+				B3FE60621D792CAC00300823 /* TCSlideButton.m */,
+			);
+			path = SlideButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FE60661D794EC400300823 /* UIView+Extension.m in Sources */,
+				B3FE60691D7954D600300823 /* FirstViewController.m in Sources */,
+				B3FE606F1D79632F00300823 /* ThirdViewController.m in Sources */,
 				B3FE604D1D792BC100300823 /* ViewController.m in Sources */,
+				B3FE606C1D7954E500300823 /* SecondViewController.m in Sources */,
 				B3FE604A1D792BC100300823 /* AppDelegate.m in Sources */,
+				B3FE60631D792CAC00300823 /* TCSlideButton.m in Sources */,
 				B3FE60471D792BC100300823 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollViewTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itcup.cn.ScrollViewTab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollViewTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itcup.cn.ScrollViewTab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
